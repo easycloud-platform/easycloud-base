@@ -1,0 +1,23 @@
+server:
+  port: 8763
+spring:
+  application:
+    name: wechat-server
+  thymeleaf:
+    cache: false
+    mode: HTML5
+    encoding: UTF-8
+    servlet:
+      content-type: text/html
+    prefix: classpath:/templates/
+    suffix: .html
+eureka:
+  instance:
+    hostname: localhost
+    prefer-ip-address: true
+    appname: wechat-server
+  client:
+    healthcheck:
+      enabled: true
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:8761/eureka/

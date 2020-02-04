@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: server-manager      #服务名称
+server:
+  port: 8761
+eureka:
+  client:
+    registerWithEureka: false #eureka服务自身也是个客户端  此处因为是单机版关闭
+    fetchRegistry: false
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
