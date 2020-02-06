@@ -2,16 +2,17 @@ package cn.catbar.easycloud.config;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.config.server.EnableConfigServer;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 @SpringBootApplication
 //开启作为配置服务器的支持
-@EnableConfigServer
-//开启作为Eureka Server的客户端的支持
 @EnableEurekaClient
-public class EasycloudConfigApplication {
+@EnableConfigServer
+public class EasycloudConfigServerApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(EasycloudConfigApplication.class, args);
+        SpringApplication.run(EasycloudConfigServerApplication.class, args);
     }
 
 }

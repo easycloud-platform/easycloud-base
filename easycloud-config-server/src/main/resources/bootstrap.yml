@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          password: Qian0711.
+          username: isliqian
+          uri: https://github.com/easycloud-platform/easycloud-base
+          default-label: master # 配置文件分支
+          search-paths: config # 配置文件所在目录
+      name: config
+eureka:
+  instance:
+    hostname: localhost
+    prefer-ip-address: true
+    appname: config-server
+  client:
+    healthcheck:
+      enabled: true
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:8761/eureka/

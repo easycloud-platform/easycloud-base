@@ -5,7 +5,7 @@
     <groupId>cn.catbar</groupId>
     <artifactId>easycloud-base</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>easycloud-common</name>
+    <name>easycloud-base</name>
     <description>Demo project for Spring Boot</description>
 
     <!--父工程的依赖-->

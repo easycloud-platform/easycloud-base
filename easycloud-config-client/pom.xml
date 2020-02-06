@@ -19,6 +19,21 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <dependencies>
+        <!--全局通用服务依赖-->
+        <dependency>
+            <groupId>cn.catbar</groupId>
+            <artifactId>easycloud-base</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-config</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
 
     </dependencies>
 
