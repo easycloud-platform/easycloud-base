@@ -1,0 +1,19 @@
+
+server:
+  port: 8700
+spring:
+  application:
+    name: sleuth
+management:
+  metrics:
+    web:
+      server:
+        auto-time-requests: false
+eureka:
+  instance:
+    hostname: localhost
+    prefer-ip-address: true
+    appname: sleuth
+  client:
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:8761/eureka/

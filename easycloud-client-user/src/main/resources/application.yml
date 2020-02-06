@@ -7,6 +7,15 @@ spring:
     throw-exception-if-no-handler-found: true  # 出现错误时，直接抛出异常
   resources:
     add-mappings: false # 不与资源文件建立映射关系
+  zipkin:
+    base-url: http://localhost:8700
+    # 关闭服务发现，否则Spring Cloud会把zipkin的url当做服务名称
+    discoveryClientEnabled: false
+    sender:
+      type: web # 设置使用http的方式传输数据
+  sleuth:
+    sampler:
+      probability: 1 # 1代表抓取100%的日志
 eureka:
   instance:
     hostname: localhost

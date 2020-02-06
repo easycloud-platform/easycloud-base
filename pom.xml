@@ -46,6 +46,8 @@
     <module>easycloud-config-client</module>
     <!--easycloud 配置服务-->
     <module>easycloud-config-server</module>
+    <!--链路追踪-->
+    <module>easycloud-sleuth</module>
   </modules>
   <dependencies>
     <!--Spring Boot 执行器组件-->

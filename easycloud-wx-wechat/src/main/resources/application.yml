@@ -11,6 +11,15 @@ spring:
       content-type: text/html
     prefix: classpath:/templates/
     suffix: .html
+  zipkin:
+    base-url: http://localhost:8700
+    # 关闭服务发现，否则Spring Cloud会把zipkin的url当做服务名称
+    discoveryClientEnabled: false
+    sender:
+      type: web # 设置使用http的方式传输数据
+  sleuth:
+    sampler:
+      probability: 1 # 1代表抓取100%的日志
 eureka:
   instance:
     hostname: localhost
