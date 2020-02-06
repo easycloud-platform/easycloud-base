@@ -1,8 +1,8 @@
 package cn.catbar.easycloud.file.controller;
 
-import cn.catbar.easycloud.common.AppResultBuilder;
-import cn.catbar.easycloud.common.bean.AppResult;
-import cn.catbar.easycloud.common.eum.ResultCode;
+import cn.catbar.easycloud.core.AppResultBuilder;
+import cn.catbar.easycloud.core.bean.AppResult;
+import cn.catbar.easycloud.core.eum.ResultCode;
 import cn.catbar.easycloud.file.bean.FastDFSFile;
 import cn.catbar.easycloud.file.client.FastDFSClient;
 import org.slf4j.Logger;

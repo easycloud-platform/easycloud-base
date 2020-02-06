@@ -1,4 +1,4 @@
-package cn.catbar.easycloud.common;
+package cn.catbar.easycloud;
 
 
 import org.junit.Test;

@@ -1,7 +1,7 @@
-package cn.catbar.easycloud.common;
+package cn.catbar.easycloud.core;
 
-import cn.catbar.easycloud.common.bean.AppResult;
-import cn.catbar.easycloud.common.eum.ResultCode;
+import cn.catbar.easycloud.core.bean.AppResult;
+import cn.catbar.easycloud.core.eum.ResultCode;
 
 /**
  * 返回构造器

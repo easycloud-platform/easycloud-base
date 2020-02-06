@@ -1,4 +1,4 @@
-package cn.catbar.easycloud.common.bean;
+package cn.catbar.easycloud.core.bean;
 
 /**
  * 统一返回实体类

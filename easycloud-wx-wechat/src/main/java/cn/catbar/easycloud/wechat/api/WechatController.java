@@ -1,8 +1,8 @@
 package cn.catbar.easycloud.wechat.api;
 
-import cn.catbar.easycloud.common.AppResultBuilder;
-import cn.catbar.easycloud.common.bean.AppResult;
-import cn.catbar.easycloud.common.eum.ResultCode;
+import cn.catbar.easycloud.core.AppResultBuilder;
+import cn.catbar.easycloud.core.bean.AppResult;
+import cn.catbar.easycloud.core.eum.ResultCode;
 import cn.catbar.easycloud.wechat.service.WechatService;
 import cn.catbar.easycloud.wechat.util.CheckoutUtil;
 import com.alibaba.fastjson.JSONObject;

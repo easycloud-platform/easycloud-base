@@ -1,6 +1,6 @@
 package cn.catbar.easycloud.wechat.service;
 
-import cn.catbar.easycloud.common.utils.HttpClientUtils;
+import cn.catbar.easycloud.utils.HttpClientUtils;
 import cn.catbar.easycloud.wechat.bean.GetPageOpenidBean;
 import cn.catbar.easycloud.wechat.bean.Token;
 import cn.catbar.easycloud.wechat.contants.WxConstants;
