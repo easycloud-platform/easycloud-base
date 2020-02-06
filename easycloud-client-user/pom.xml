@@ -33,6 +33,11 @@
 			<artifactId>easycloud-base</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
+		<!--Web Service服务-->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-openfeign</artifactId>
+		</dependency>
 	</dependencies>
 
 	<build>

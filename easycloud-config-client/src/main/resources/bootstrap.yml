@@ -3,16 +3,19 @@ spring:
     name: config-client
   cloud:
     config:
-      uri: http://127.0.0.1:8092
+#      uri: http://127.0.0.1:8092 加入注册中心不再使用ip地址
       label: master
       name: config
+      discovery:
+        enabled: true
+        service-id: config-server
 eureka:
   instance:
     hostname: localhost
     prefer-ip-address: true
-    appname: config-server
+    appname: config-client
   client:
-    healthcheck:
-      enabled: true
+    registerWithEureka: true
+    fetchRegistry: true
     service-url:
       defaultZone: http://${eureka.instance.hostname}:8761/eureka/

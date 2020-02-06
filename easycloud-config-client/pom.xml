@@ -18,6 +18,7 @@
         <version>1.0-SNAPSHOT</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
+
     <dependencies>
         <!--全局通用服务依赖-->
         <dependency>
